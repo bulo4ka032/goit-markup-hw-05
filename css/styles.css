@@ -97,6 +97,7 @@ img {
   padding: 24px 0;
   color: var(--primary-color);
   transition: color var(--transition-duration-and-fun) ;
+  transition: border var(--transition-duration-and-fun);
   position: relative;
 }
 
@@ -104,11 +105,12 @@ img {
 .menu-link:focus {
   color: var(--active-color);
   padding-bottom: 24px;
-  transition: border var(--transition-duration-and-fun);
+;
   
 }
 
-.menu-link:hover::after {
+.menu-link:hover::after,
+.menu-link:focus::after {
   content: "";
   position: absolute;
   left: 0;
