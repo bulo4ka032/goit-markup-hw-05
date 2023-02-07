@@ -113,6 +113,10 @@ img {
   padding-bottom: 24px;
 }
 
+.active {
+  color: var(--active-color);
+}
+
 .active::after {
   content: "";
   position: absolute;
