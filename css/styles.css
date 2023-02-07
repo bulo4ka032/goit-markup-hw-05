@@ -211,8 +211,7 @@ img {
 .hero-section {
   background-color: var(--primary-color);
   padding: 188px 0;
-  display: flex;
-  flex-direction: column;
+  
   justify-content: center;
 
   max-width: 1440px;
@@ -264,8 +263,6 @@ img {
 
 .feature {
   width: 264px;
-  display: flex;
-  flex-direction: column;
 }
 
 .feature-item {
@@ -433,14 +430,15 @@ margin-bottom: 24px;
   transform: translate(fill var(--transition-duration-and-fun));
 }
 
-.customers-item:hover,
-.customer-icon:focus {
-  border: 1px solid var(--active-color);
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon {
+  
+  fill: var(--active-color);
 }
 
-.customer-icon:focus,
-.customer-icon:hover {
-  fill: var(--active-color);
+.customers-item:focus,
+.customers-item:hover {
+ border: 1px solid var(--active-color);
 }
 
 /* \\\\\\\\\\\\\\\\\\\ Portfolio ////////////////// */
@@ -631,7 +629,7 @@ margin-bottom: 24px;
   display: flex;
 
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 /* ==== == = == = === MODAL WINDOW === = === == == == ==  */
