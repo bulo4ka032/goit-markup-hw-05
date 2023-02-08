@@ -266,7 +266,7 @@ img {
   height: 112px;
   display: flex;
   text-align: center;
-
+  align-items: center;
   justify-content: center;
 }
 
@@ -312,6 +312,8 @@ margin-bottom: 24px;
   line-height: 1.1;
   text-align: center;
   text-transform: capitalize;
+
+  margin-bottom: 72px;
 }
 
 .teammate-name {
@@ -505,7 +507,7 @@ margin-bottom: 24px;
   top: 0;
   overflow: auto;
   transform: translateY(+100%);
-  transition: var(--transition-duration-and-fun);
+  transition: transform var(--transition-duration-and-fun);
 
   font-size: 16px;
   line-height: 1.5;
